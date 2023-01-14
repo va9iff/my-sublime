@@ -1,0 +1,71 @@
+[
+	{
+		"keys": ["alt+k"],
+		"command": "build",
+		"args": {
+			"select": false,
+			"build_system": "Packages/Personal/utils/Open CMD - file.sublime-build",
+			"variant": "",
+			"choice_build_system": false,
+		}
+	},
+	{
+		"keys": ["shift+alt+k"],
+		"command": "build",
+		"args": {
+			"select": false,
+			"build_system": "Packages/Personal/utils/Open CMD - top.sublime-build",
+			"variant": "",
+			"choice_build_system": false,
+		}
+	},
+	{
+		"keys": ["ctrl+alt+e"],
+		"command": "build",
+		"args": {
+			"select": false,
+			"build_system": "Packages/Personal/utils/Browse Files - file.sublime-build",
+			"choice_build_system": false,
+			"variant": "",
+		}
+	},
+	{
+		"keys": ["ctrl+shift+alt+e"],
+		"command": "build",
+		"args": {
+			"select": false,
+			"build_system": "Packages/Personal/utils/Browse Files - top.sublime-build",
+			"choice_build_system": false,
+			"variant": "",
+		}
+	},
+	{
+		"keys": ["alt+a"],
+		"command": "build",
+		"args": {
+			"select": false,
+			"build_system": "Packages/Personal/utils/Run.sublime-build",
+			"choice_build_system": false,
+		}
+	},
+	{
+		"keys": ["alt+shift+a"],
+		"command": "build",
+		"args": {
+			"select": false,
+			"build_system": "Packages/Personal/utils/Run with CMD.sublime-build",
+			"choice_build_system": false,
+		}
+	},
+					/**/{
+		"keys": ["alt+shift+d"],
+		"command": "build",
+		"args": {
+			"select": false,
+			"build_system": "Packages/Personal/utils/Browse Files.sublime-build",
+			"variant": "",
+		}
+	}/**/,
+
+
+]

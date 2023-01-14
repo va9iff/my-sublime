@@ -1,0 +1,10 @@
+[
+	{ "keys": ["ctrl+shift+c"], "command": "cancel_build" },
+	{ "keys": ["ctrl+w"], "command": "close_file" }, //so ctrl+w won't close window
+	{ "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace"},
+
+	{ "keys": ["alt+shift+s"], "command": "toggle_status_bar" },
+	{ "keys": ["alt+shift+m"], "command": "toggle_minimap" },
+	{ "keys": ["alt+shift+g"], "command": "toggle_setting", "args": {"setting": "gutter"}},
+	{ "keys": ["ctrl+shift+'"], "command": "toggle_tabs" },
+]

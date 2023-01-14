@@ -1,0 +1,14 @@
+Package Control
+Terminus
+FileIcons
+Emmet
+PackageDev
+Resolve-Javascript-Modules
+FileManager
+~~~
+
+Disableables:
+
+Guna
+SideBarEnhancements
+Buildview

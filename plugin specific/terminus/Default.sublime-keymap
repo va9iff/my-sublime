@@ -1,0 +1,41 @@
+[
+
+	// [start terminus panel | hide | open the running panel]
+	{
+		"keys": ["alt+`"],
+		"command": "toggle_terminus_panel",
+		"args": {
+			"cwd": "${folder}",
+			"panel_name": "Terminus"
+		}
+	},
+
+	// close all terminus instances
+	{
+		"keys": ["alt+d"],
+		"command": "my_terminus_close_all",
+	},
+
+	// close view with close file key binding
+	{
+		"keys": ["ctrl+w"],
+		"command": "terminus_close",
+		"context": [{ "key": "terminus_view" }]
+	},
+
+	// hide terminus panel with esc
+	{
+		"keys": ["escape"],
+		"command": "toggle_terminus_panel",
+		"args": { "key": "escape" },
+		"context": [
+			{ "key": "terminus_view" },
+			{
+				"key": "terminus_view.closed",
+				"operator": "not_equal",
+				"operand": true
+			}
+		]
+	},
+	
+]

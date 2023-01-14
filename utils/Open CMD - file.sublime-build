@@ -1,0 +1,6 @@
+// open a command prompt at the file's directory
+
+{
+	"shell_cmd": "echo CMD - \"${file_path}\" & cd \"${file_path}\" & start",
+	"selector": "-",
+}

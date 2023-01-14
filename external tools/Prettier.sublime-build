@@ -1,0 +1,17 @@
+// node and prettier should be installed
+
+{
+	"shell_cmd": "prettier --write --use-tabs  --arrow-parens \"avoid\" --no-semi \"${file}\"",
+	"file_patterns": [
+		"*.html",
+		"*.css",
+		"*.js",
+		"*.scss",
+		"*.sass",
+		"*.less",
+		"*.md",
+		"*.yaml",
+		"*.json",
+		"*.sublime-build"
+	]
+}

@@ -1,0 +1,25 @@
+[
+	{
+		"keys": ["alt+l", "alt+o"],
+		"command": "build",
+		"args": {
+			"select": false,
+			"build_system": "Packages/Personal/external tools/Live-Server.sublime-build",
+			"variant": "",
+			"choice_build_system": false,
+			"choice_variant": false
+		}
+	},
+	{
+		"keys": ["alt+shift+f"],
+		"command": "build",
+		"args": {
+			"select": false,
+			"build_system": "Packages/Personal/external tools/Prettier.sublime-build",
+			"variant": "",
+			"choice_build_system": false,
+			"choice_variant": false,
+			"quiet": true
+		}
+	},
+]
