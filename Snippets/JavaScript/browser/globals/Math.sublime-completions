@@ -1,0 +1,104 @@
+{
+	"scope": "source.js",
+	"completions": [
+		{ "trigger": "Math.abs", "contents": "Math.abs($0)", "kind": "function" },
+		{ "trigger": "Math.acos", "contents": "Math.acos($0)", "kind": "function" },
+		{
+			"trigger": "Math.acosh",
+			"contents": "Math.acosh($0)",
+			"kind": "function"
+		},
+		{ "trigger": "Math.asin", "contents": "Math.asin($0)", "kind": "function" },
+		{
+			"trigger": "Math.asinh",
+			"contents": "Math.asinh($0)",
+			"kind": "function"
+		},
+		{ "trigger": "Math.atan", "contents": "Math.atan($0)", "kind": "function" },
+		{
+			"trigger": "Math.atanh",
+			"contents": "Math.atanh($0)",
+			"kind": "function"
+		},
+		{
+			"trigger": "Math.atan2",
+			"contents": "Math.atan2($0)",
+			"kind": "function"
+		},
+		{ "trigger": "Math.ceil", "contents": "Math.ceil($0)", "kind": "function" },
+		{ "trigger": "Math.cbrt", "contents": "Math.cbrt($0)", "kind": "function" },
+		{
+			"trigger": "Math.expm1",
+			"contents": "Math.expm1($0)",
+			"kind": "function"
+		},
+		{
+			"trigger": "Math.clz32",
+			"contents": "Math.clz32($0)",
+			"kind": "function"
+		},
+		{ "trigger": "Math.cos", "contents": "Math.cos($0)", "kind": "function" },
+		{ "trigger": "Math.cosh", "contents": "Math.cosh($0)", "kind": "function" },
+		{ "trigger": "Math.exp", "contents": "Math.exp($0)", "kind": "function" },
+		{
+			"trigger": "Math.floor",
+			"contents": "Math.floor($0)",
+			"kind": "function"
+		},
+		{
+			"trigger": "Math.fround",
+			"contents": "Math.fround($0)",
+			"kind": "function"
+		},
+		{
+			"trigger": "Math.hypot",
+			"contents": "Math.hypot($0)",
+			"kind": "function"
+		},
+		{ "trigger": "Math.imul", "contents": "Math.imul($0)", "kind": "function" },
+		{ "trigger": "Math.log", "contents": "Math.log($0)", "kind": "function" },
+		{
+			"trigger": "Math.log1p",
+			"contents": "Math.log1p($0)",
+			"kind": "function"
+		},
+		{ "trigger": "Math.log2", "contents": "Math.log2($0)", "kind": "function" },
+		{
+			"trigger": "Math.log10",
+			"contents": "Math.log10($0)",
+			"kind": "function"
+		},
+		{ "trigger": "Math.max", "contents": "Math.max($0)", "kind": "function" },
+		{ "trigger": "Math.min", "contents": "Math.min($0)", "kind": "function" },
+		{ "trigger": "Math.pow", "contents": "Math.pow($0)", "kind": "function" },
+		{
+			"trigger": "Math.random",
+			"contents": "Math.random($0)",
+			"kind": "function"
+		},
+		{
+			"trigger": "Math.round",
+			"contents": "Math.round($0)",
+			"kind": "function"
+		},
+		{ "trigger": "Math.sign", "contents": "Math.sign($0)", "kind": "function" },
+		{ "trigger": "Math.sin", "contents": "Math.sin($0)", "kind": "function" },
+		{ "trigger": "Math.sinh", "contents": "Math.sinh($0)", "kind": "function" },
+		{ "trigger": "Math.sqrt", "contents": "Math.sqrt($0)", "kind": "function" },
+		{ "trigger": "Math.tan", "contents": "Math.tan($0)", "kind": "function" },
+		{ "trigger": "Math.tanh", "contents": "Math.tanh($0)", "kind": "function" },
+		{
+			"trigger": "Math.trunc",
+			"contents": "Math.trunc($0)",
+			"kind": "function"
+		},
+		{ "trigger": "Math.E", "contents": "Math.E.$0" },
+		{ "trigger": "Math.LN10", "contents": "Math.LN10.$0" },
+		{ "trigger": "Math.LN2", "contents": "Math.LN2.$0" },
+		{ "trigger": "Math.LOG10E", "contents": "Math.LOG10E.$0" },
+		{ "trigger": "Math.LOG2E", "contents": "Math.LOG2E.$0" },
+		{ "trigger": "Math.PI", "contents": "Math.PI.$0" },
+		{ "trigger": "Math.SQRT1_2", "contents": "Math.SQRT1_2.$0" },
+		{ "trigger": "Math.SQRT2", "contents": "Math.SQRT2.$0" }
+	]
+}

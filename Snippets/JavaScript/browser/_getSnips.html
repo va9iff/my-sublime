@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jsnip</title>
+</head>
+<body>
+	open the source code and change the <code>_completings_</code> array to
+	get the completions. 
+	the elements of the array is toupe of [object, itsNameInCompletions].
+	Typically it's like [Math, "Math"].
+	<div class="main"></div>
+	<script type="text/javascript">
+		const _completings_ = [
+			// [document, 'document'],
+			// [Math, 'Math'],
+			// [Object, 'Object'],
+			// [Array, 'Array'],
+			// [Object.prototype, ' '], 
+
+			// [Array.prototype, ']'], //doesn't work. ] is non-word
+			]
+
+		function childSnippetsFor(obj, objString) {
+			let map = {}
+
+			for (let key of Object.getOwnPropertyNames(obj)) {
+				let val = obj[key]
+				map[key] = typeof val
+			}
+
+			let res = {"scope": "source.js",
+				"completions":
+			[
+				// "php",
+				// { "trigger": "abs", "contents": "abs(${1:number})" },
+				// { "trigger": "acos", "contents": "acos(${1:arg})" },
+				// { "trigger": "acosh", "contents": "acosh(${1:arg})" },
+				// { "trigger": "addcslashes", "contents": "addcslashes(${1:str}, ${2:charlist})" },
+			]
+		}
+			let completions = res['completions']
+
+			for (let key in map) {
+				let val = map[key]
+				let trigger = `${objString}.${key}`
+				let fullTrigger = `${objString}.${key}${val==`function` ? `($0)` : `.$0`}`
+				let fileContent = `${fullTrigger}`
+				// res[trigger]=(fileContent)
+				let currentCompletion = {
+				"trigger": trigger,
+				"contents": fileContent,
+			}
+			if (val==`function`) currentCompletion["kind"] = "function"
+			completions.push(currentCompletion)
+			}
+			return res
+		}
+
+
+		function saveObjAsSublimeCompletions(obj, name) {
+			const jsonString = JSON.stringify(obj)
+		    name += '.sublime-completions'
+
+		    // create file
+		    const a = document.createElement("a");
+		    const file = new Blob([jsonString], { type: "text/plain" });
+		    a.href = URL.createObjectURL(file);
+		    a.download = name;
+		    document.body.appendChild(a);
+		    a.click();
+		    a.remove();
+		}
+
+
+		function saveCompletionsFor(_completing_){
+			let [obj,name] = _completing_
+			saveObjAsSublimeCompletions(childSnippetsFor(obj, name), name)
+		}
+
+
+
+
+		function saveAllCompletionsFor(arr){
+			for (let _completing_ of _completings_){
+				saveCompletionsFor(_completing_)
+			}
+		}
+
+		saveAllCompletionsFor(_completings_)
+
+
+		// saveObjAsSublimeCompletions(childSnippetsFor(Math), 'Math')
+	</script>
+</body>
+</html>
