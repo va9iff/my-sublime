@@ -1,7 +1,7 @@
 // run or open the file
 
 {
-	"shell_cmd": "echo Run ${file} & \"${file}\"",
+	"shell_cmd": "\"${file}\"",
 	"kill": false,
 	"kill_previous": false,
 }

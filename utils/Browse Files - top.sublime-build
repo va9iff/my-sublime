@@ -1,6 +1,7 @@
 // Open file explorer at the top folder
 
 {
-	"shell_cmd": "echo Browse Files - top ${folder} & cd \"${folder}\" & start .",	
+	"working_dir": "$folder",
+	"shell_cmd": "start .",	
 	"selector": "-",
 }

@@ -1,6 +1,7 @@
 // Open file explorer at the folder of the file 
 
 {
-	"shell_cmd": "echo Browse Files ${file_path} & cd \"${file_path}\" & start .",
-	"selector": "-", // don't show in ctrl+b
+	"working_dir": "$file_path",
+	"shell_cmd": "start .",
+	"selector": "-",
 }

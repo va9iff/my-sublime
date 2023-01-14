@@ -1,5 +1,5 @@
 {
-	"shell_cmd": "echo Running with CMD ${file} & start cmd.exe /k \"${file}\"",
+	"shell_cmd": "start cmd.exe /k \"${file}\"",
 	"kill": false,
 	"kill_previous": false,
 }

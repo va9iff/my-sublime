@@ -1,6 +1,7 @@
 // open a command prompt at the top directory
 
 {
-	"shell_cmd": "echo CMD top - \"${folder}\" & cd \"${folder}\" & start",
+	"working_dir": "$folder",
+	"shell_cmd": "start",
 	"selector": "-",
 }
