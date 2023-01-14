@@ -1,6 +1,6 @@
 [
 	{
-		"keys": ["alt+k"],
+		"keys": ["shift+alt+k"],
 		"command": "build",
 		"args": {
 			"select": false,
@@ -10,7 +10,7 @@
 		}
 	},
 	{
-		"keys": ["shift+alt+k"],
+		"keys": ["alt+k"],
 		"command": "build",
 		"args": {
 			"select": false,
@@ -20,7 +20,7 @@
 		}
 	},
 	{
-		"keys": ["ctrl+alt+e"],
+		"keys": ["ctrl+shift+alt+e"],
 		"command": "build",
 		"args": {
 			"select": false,
@@ -30,7 +30,7 @@
 		}
 	},
 	{
-		"keys": ["ctrl+shift+alt+e"],
+		"keys": ["ctrl+alt+e"],
 		"command": "build",
 		"args": {
 			"select": false,
