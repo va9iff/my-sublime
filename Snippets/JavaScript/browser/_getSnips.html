@@ -6,51 +6,64 @@
 	<title>jsnip</title>
 </head>
 <body>
-	open the source code and change the <code>_completings_</code> array to
-	get the completions. 
-	the elements of the array is toupe of [object, itsNameInCompletions].
-	Typically it's like [Math, "Math"].
+	Open the source code and change the <code>completings</code> object.
+	The keys of object is object, the obj prop is to determine if the key is 
+	function or not. keys prop is to show this obj.keys as completions. <br>
+
+	Most built-in global keys are non-enumerable, so Object.getOwnPropertyNames() 
+	can be used for this.
+
+	<i>Allow multiple file downloads is probably gonna show up. Allow it to download 
+	every completions files as stand-alone file. Then just move it to somewhere in 
+	the packages folder.</i>
 	<div class="main"></div>
 	<script type="text/javascript">
-		const _completings_ = [
-			// [document, 'document'],
-			// [Math, 'Math'],
-			// [Object, 'Object'],
-			// [Array, 'Array'],
+		// const _completings_ = [
+			// [{}/*will be reassigned*/, 'document'],
+			// [Object.getOwnPropertyNames(Math).reduce((obj,key)=>obj[key]=Math[key],{}), 'Math'],
+			// [Object.getOwnPropertyNames(Object), 'Object'],
+			// [Object.getOwnPropertyNames(Array), 'Array'],
+
 			// [Object.prototype, ' '], 
-
+			// [window, 'window'], // haven't used or tested
 			// [Array.prototype, ']'], //doesn't work. ] is non-word
-			]
+			// ]
 
-		function childSnippetsFor(obj, objString) {
+		let documentKeys = []
+		for (let key in document) documentKeys.push(key)
+
+		let keysOf = (...arg) => Object.getOwnPropertyNames(...arg)
+
+
+		completings = {
+			"document": {obj:document, keys: documentKeys},
+			"Math": {obj:Math, keys: keysOf(Math)},
+			"Object": {obj:Object, keys: keysOf(Object)},
+			"Array": {obj:Array, keys: keysOf(Array)},
+		}
+
+
+
+		function childSnippetsFor(objString, obj, keys) {
 			let map = {}
-
-			for (let key of Object.getOwnPropertyNames(obj)) {
+			for (let key of keys) {
 				let val = obj[key]
 				map[key] = typeof val
 			}
 
-			let res = {"scope": "source.js",
-				"completions":
-			[
-				// "php",
-				// { "trigger": "abs", "contents": "abs(${1:number})" },
-				// { "trigger": "acos", "contents": "acos(${1:arg})" },
-				// { "trigger": "acosh", "contents": "acosh(${1:arg})" },
-				// { "trigger": "addcslashes", "contents": "addcslashes(${1:str}, ${2:charlist})" },
-			]
-		}
+			let res = {
+				"scope": "source.js",
+				"completions":[]
+			}
 			let completions = res['completions']
 
 			for (let key in map) {
 				let val = map[key]
-				let trigger = `${objString}.${key}`
-				let fullTrigger = `${objString}.${key}${val==`function` ? `($0)` : `.$0`}`
-				let fileContent = `${fullTrigger}`
-				// res[trigger]=(fileContent)
+				let trigger = `${objString}.${key}${val==`function` ? `()` : ``}`
+				let content = `${objString}.${key}${val==`function` ? `($0)` : `$0`}`
 				let currentCompletion = {
 				"trigger": trigger,
-				"contents": fileContent,
+				"contents": content,
 			}
 			if (val==`function`) currentCompletion["kind"] = "function"
 			completions.push(currentCompletion)
@@ -74,21 +87,16 @@
 		}
 
 
-		function saveCompletionsFor(_completing_){
-			let [obj,name] = _completing_
-			saveObjAsSublimeCompletions(childSnippetsFor(obj, name), name)
+
+		for (let objString in completings){
+			let completing = completings[objString]
+			let {obj, keys} = completing
+			saveObjAsSublimeCompletions(childSnippetsFor(objString, obj, keys), objString)
 		}
 
-
-
-
-		function saveAllCompletionsFor(arr){
-			for (let _completing_ of _completings_){
-				saveCompletionsFor(_completing_)
-			}
-		}
-
-		saveAllCompletionsFor(_completings_)
+		// let objString = "document"
+		// let completing = completings[objString]
+		// console.log(childSnippetsFor(objString, completing.obj, completing.keys))
 
 
 		// saveObjAsSublimeCompletions(childSnippetsFor(Math), 'Math')

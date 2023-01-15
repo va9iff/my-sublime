@@ -1,19 +1,19 @@
 {
 	"scope": "source.js",
 	"completions": [
-		{ "trigger": "Array.length", "contents": "Array.length.$0" },
-		{ "trigger": "Array.name", "contents": "Array.name.$0" },
-		{ "trigger": "Array.prototype", "contents": "Array.prototype.$0" },
+		{ "trigger": "Array.length", "contents": "Array.length$0" },
+		{ "trigger": "Array.name", "contents": "Array.name$0" },
+		{ "trigger": "Array.prototype", "contents": "Array.prototype$0" },
 		{
-			"trigger": "Array.isArray",
+			"trigger": "Array.isArray()",
 			"contents": "Array.isArray($0)",
 			"kind": "function"
 		},
 		{
-			"trigger": "Array.from",
+			"trigger": "Array.from()",
 			"contents": "Array.from($0)",
 			"kind": "function"
 		},
-		{ "trigger": "Array.of", "contents": "Array.of($0)", "kind": "function" }
+		{ "trigger": "Array.of()", "contents": "Array.of($0)", "kind": "function" }
 	]
 }

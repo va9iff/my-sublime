@@ -1,112 +1,116 @@
 {
 	"scope": "source.js",
 	"completions": [
-		{ "trigger": "Object.length", "contents": "Object.length.$0" },
-		{ "trigger": "Object.name", "contents": "Object.name.$0" },
-		{ "trigger": "Object.prototype", "contents": "Object.prototype.$0" },
+		{ "trigger": "Object.length", "contents": "Object.length$0" },
+		{ "trigger": "Object.name", "contents": "Object.name$0" },
+		{ "trigger": "Object.prototype", "contents": "Object.prototype$0" },
 		{
-			"trigger": "Object.assign",
+			"trigger": "Object.assign()",
 			"contents": "Object.assign($0)",
 			"kind": "function"
 		},
 		{
-			"trigger": "Object.getOwnPropertyDescriptor",
+			"trigger": "Object.getOwnPropertyDescriptor()",
 			"contents": "Object.getOwnPropertyDescriptor($0)",
 			"kind": "function"
 		},
 		{
-			"trigger": "Object.getOwnPropertyDescriptors",
+			"trigger": "Object.getOwnPropertyDescriptors()",
 			"contents": "Object.getOwnPropertyDescriptors($0)",
 			"kind": "function"
 		},
 		{
-			"trigger": "Object.getOwnPropertyNames",
+			"trigger": "Object.getOwnPropertyNames()",
 			"contents": "Object.getOwnPropertyNames($0)",
 			"kind": "function"
 		},
 		{
-			"trigger": "Object.getOwnPropertySymbols",
+			"trigger": "Object.getOwnPropertySymbols()",
 			"contents": "Object.getOwnPropertySymbols($0)",
 			"kind": "function"
 		},
 		{
-			"trigger": "Object.hasOwn",
+			"trigger": "Object.hasOwn()",
 			"contents": "Object.hasOwn($0)",
 			"kind": "function"
 		},
-		{ "trigger": "Object.is", "contents": "Object.is($0)", "kind": "function" },
 		{
-			"trigger": "Object.preventExtensions",
+			"trigger": "Object.is()",
+			"contents": "Object.is($0)",
+			"kind": "function"
+		},
+		{
+			"trigger": "Object.preventExtensions()",
 			"contents": "Object.preventExtensions($0)",
 			"kind": "function"
 		},
 		{
-			"trigger": "Object.seal",
+			"trigger": "Object.seal()",
 			"contents": "Object.seal($0)",
 			"kind": "function"
 		},
 		{
-			"trigger": "Object.create",
+			"trigger": "Object.create()",
 			"contents": "Object.create($0)",
 			"kind": "function"
 		},
 		{
-			"trigger": "Object.defineProperties",
+			"trigger": "Object.defineProperties()",
 			"contents": "Object.defineProperties($0)",
 			"kind": "function"
 		},
 		{
-			"trigger": "Object.defineProperty",
+			"trigger": "Object.defineProperty()",
 			"contents": "Object.defineProperty($0)",
 			"kind": "function"
 		},
 		{
-			"trigger": "Object.freeze",
+			"trigger": "Object.freeze()",
 			"contents": "Object.freeze($0)",
 			"kind": "function"
 		},
 		{
-			"trigger": "Object.getPrototypeOf",
+			"trigger": "Object.getPrototypeOf()",
 			"contents": "Object.getPrototypeOf($0)",
 			"kind": "function"
 		},
 		{
-			"trigger": "Object.setPrototypeOf",
+			"trigger": "Object.setPrototypeOf()",
 			"contents": "Object.setPrototypeOf($0)",
 			"kind": "function"
 		},
 		{
-			"trigger": "Object.isExtensible",
+			"trigger": "Object.isExtensible()",
 			"contents": "Object.isExtensible($0)",
 			"kind": "function"
 		},
 		{
-			"trigger": "Object.isFrozen",
+			"trigger": "Object.isFrozen()",
 			"contents": "Object.isFrozen($0)",
 			"kind": "function"
 		},
 		{
-			"trigger": "Object.isSealed",
+			"trigger": "Object.isSealed()",
 			"contents": "Object.isSealed($0)",
 			"kind": "function"
 		},
 		{
-			"trigger": "Object.keys",
+			"trigger": "Object.keys()",
 			"contents": "Object.keys($0)",
 			"kind": "function"
 		},
 		{
-			"trigger": "Object.entries",
+			"trigger": "Object.entries()",
 			"contents": "Object.entries($0)",
 			"kind": "function"
 		},
 		{
-			"trigger": "Object.fromEntries",
+			"trigger": "Object.fromEntries()",
 			"contents": "Object.fromEntries($0)",
 			"kind": "function"
 		},
 		{
-			"trigger": "Object.values",
+			"trigger": "Object.values()",
 			"contents": "Object.values($0)",
 			"kind": "function"
 		}
