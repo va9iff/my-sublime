@@ -1,0 +1,17 @@
+{
+	    	// "target": "terminus_exec",
+        "target": "terminus_open",
+	"cancel": "terminus_cancel_build",
+	// "cmd": ["python", "helloworld.py"],
+
+	"working_dir": "$folder",
+
+	"shell_cmd": "tsc --p ${folder}",
+	"selector": "source.ts",
+	"variants": [
+		{
+			"name": "whatch",
+			"shell_cmd": "tsc --p ${folder} --watch",
+		}
+	],
+}

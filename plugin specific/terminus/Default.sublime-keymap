@@ -13,7 +13,7 @@
 	// close all terminus instances
 	{
 		"keys": ["alt+d"],
-		"command": "my_terminus_close_all",
+		"command": "terminus_close_all",
 	},
 
 	// close view with close file key binding

@@ -1,0 +1,10 @@
+{
+	"shell_cmd": "tsc --p ${folder}",
+	"selector": "source.ts",
+	"variants": [
+		{
+			"name": "whatch",
+			"shell_cmd": "tsc --p ${folder} --watch",
+		}
+	],
+}
