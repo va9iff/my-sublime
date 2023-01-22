@@ -3,4 +3,5 @@
 {
 	"shell_cmd": "start cmd /min /K live-server",
 	"selector": "-",
+	"working_dir": "${folder}",
 }
