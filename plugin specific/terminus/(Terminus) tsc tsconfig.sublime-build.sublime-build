@@ -1,6 +1,6 @@
 {
-	    	// "target": "terminus_exec",
-        "target": "terminus_open",
+	// "target": "terminus_exec",
+	"target": "terminus_open",
 	"cancel": "terminus_cancel_build",
 	// "cmd": ["python", "helloworld.py"],
 
@@ -11,7 +11,7 @@
 	"variants": [
 		{
 			"name": "whatch",
-			"shell_cmd": "tsc --p ${folder} --watch",
+			"shell_cmd": "tsc --p ${folder} --watch"
 		}
-	],
+	]
 }
