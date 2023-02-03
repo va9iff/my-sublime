@@ -1,7 +1,7 @@
 // node and live server is needed I guess
 
 {
-	"shell_cmd": "start cmd /min /K live-server",
+	"shell_cmd": "start /min cmd /K live-server",
 	"selector": "-",
 	"working_dir": "${folder}",
 }
