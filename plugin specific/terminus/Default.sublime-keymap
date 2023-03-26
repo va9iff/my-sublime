@@ -38,4 +38,12 @@
 		]
 	},
 	
+
+	// terminus in view
+	{
+	    "keys": ["ctrl+alt+t"], "command": "terminus_open", "args": {
+	        "cwd": "${file_path:${folder}}"
+	    }
+	},
+
 ]
