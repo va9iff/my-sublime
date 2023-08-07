@@ -1,0 +1,6 @@
+// duplicate it at Packages/User/Terminus.sublime-settings
+{
+	"view_settings": {
+		"font_face": "Consolas",
+	}
+}

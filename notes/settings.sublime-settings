@@ -1,0 +1,18 @@
+// those are settings I usually don't change. paste them along the user settings
+{
+	"caret_style": "smooth",
+	"overlay_scroll_bars": "enabled",
+	"auto_complete_cycle": true,
+	"auto_complete_trailing_symbols": true,
+	"hot_exit": "only_on_quit",
+	
+	// visual
+	"font_face": "cascadia code",
+	"highlight_modified_tabs": true,
+	"highlight_line": true,
+	"file_tab_style": "rounded",
+	"hide_tab_scrolling_buttons": true,
+	"rulers": [ 80 ],
+	"tab_completion": false,
+
+}

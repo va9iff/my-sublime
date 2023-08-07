@@ -1,11 +1,13 @@
 Crucial:
-!	Package Control
-!	Terminus
-	FileIcons
+	Package Control
+	Terminus
 
 Optional:
-!	FileManager
+	FileIcons
+	FileManager
 	PackageDev
+
+Maybe:
 	Buildview
 
 Fancy:
