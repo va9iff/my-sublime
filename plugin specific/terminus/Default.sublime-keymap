@@ -10,9 +10,16 @@
 		}
 	},
 
+	// terminus in view
+	{
+	    "keys": ["alt+t"], "command": "terminus_open", "args": {
+	        "cwd": "${file_path:${folder}}"
+	    }
+	},
+
 	// close all terminus instances
 	{
-		"keys": ["alt+d"],
+		"keys": ["ctrl+alt+t"],
 		"command": "terminus_close_all",
 	},
 
@@ -37,13 +44,4 @@
 			}
 		]
 	},
-	
-
-	// terminus in view
-	{
-	    "keys": ["ctrl+alt+t"], "command": "terminus_open", "args": {
-	        "cwd": "${file_path:${folder}}"
-	    }
-	},
-
 ]
