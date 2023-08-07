@@ -1,14 +1,16 @@
-Package Control
-Terminus
-FileIcons
-Emmet
-PackageDev
-Resolve-Javascript-Modules
-FileManager
-~~~
+Crucial:
+!	Package Control
+!	Terminus
+	FileIcons
 
-Disableables:
+Optional:
+!	FileManager
+	PackageDev
+	Buildview
 
-Guna
-SideBarEnhancements
-Buildview
+Fancy:
+	Guna
+
+Nope:
+	Emmet
+	Resolve-Javascript-Modules

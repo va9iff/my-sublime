@@ -1,0 +1,2 @@
+I use Cascadia-Code as the main coding font 
+so I need to install it and set it for sublime text
