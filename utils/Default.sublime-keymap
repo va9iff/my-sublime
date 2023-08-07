@@ -1,14 +1,6 @@
 [
-	{
-		"keys": ["shift+alt+k"],
-		"command": "build",
-		"args": {
-			"select": false,
-			"build_system": "Packages/Personal/utils/Open CMD - file.sublime-build",
-			"variant": "",
-			"choice_build_system": false,
-		}
-	},
+
+	// open cmd at top folder
 	{
 		"keys": ["alt+k"],
 		"command": "build",
@@ -19,29 +11,22 @@
 			"choice_build_system": false,
 		}
 	},
-	// we did it with just a key binding and built in command. no need for another build
-	// {
-	// 	"keys": ["ctrl+shift+alt+e"],
-	// 	"command": "build",
-	// 	"args": {
-	// 		"select": false,
-	// 		"build_system": "Packages/Personal/utils/Browse Files - file.sublime-build",
-	// 		"choice_build_system": false,
-	// 		"variant": "",
-	// 	}
-	// },
-	// {
-	// 	"keys": ["ctrl+alt+e"],
-	// 	"command": "build",
-	// 	"args": {
-	// 		"select": false,
-	// 		"build_system": "Packages/Personal/utils/Browse Files - top.sublime-build",
-	// 		"choice_build_system": false,
-	// 		"variant": "",
-	// 	}
-	// },
+
+	// open cmd at file folder
 	{
-		"keys": ["alt+a"],
+		"keys": ["shift+alt+k"],
+		"command": "build",
+		"args": {
+			"select": false,
+			"build_system": "Packages/Personal/utils/Open CMD - file.sublime-build",
+			"variant": "",
+			"choice_build_system": false,
+		}
+	},
+
+	// run the file
+	{
+		"keys": ["alt+b"],
 		"command": "build",
 		"args": {
 			"select": false,
@@ -49,8 +34,10 @@
 			"choice_build_system": false,
 		}
 	},
+
+	// run the file with cmd
 	{
-		"keys": ["alt+shift+a"],
+		"keys": ["alt+shift+b"],
 		"command": "build",
 		"args": {
 			"select": false,
@@ -58,15 +45,4 @@
 			"choice_build_system": false,
 		}
 	},
-					/**/{
-		"keys": ["alt+shift+d"],
-		"command": "build",
-		"args": {
-			"select": false,
-			"build_system": "Packages/Personal/utils/Browse Files.sublime-build",
-			"variant": "",
-		}
-	}/**/,
-
-
 ]
