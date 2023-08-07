@@ -1,0 +1,12 @@
+{
+	"scope": "source.css",
+	"completions": [
+		{
+			"trigger": "keyframes",
+			"contents": "@keyframes ${1:anim}{\n	from {\n		${2}\n	}\n	to {\n		${2}$3\n	}\n}\n\n$0",
+			"annotation": "animation",
+			"kind": ["keyword", "@", ""],
+
+		}
+	]
+}
