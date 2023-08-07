@@ -1,10 +1,32 @@
 [
 	{ "keys": ["ctrl+shift+c"], "command": "cancel_build" },
 	{ "keys": ["ctrl+w"], "command": "close_file" }, //so ctrl+w won't close window
-	{ "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace"},
+	{ "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
 
 	{ "keys": ["alt+shift+s"], "command": "toggle_status_bar" },
 	{ "keys": ["alt+shift+m"], "command": "toggle_minimap" },
-	{ "keys": ["alt+shift+g"], "command": "toggle_setting", "args": {"setting": "gutter"}},
+	{
+		"keys": ["alt+shift+g"],
+		"command": "toggle_setting",
+		"args": { "setting": "gutter" }
+	},
 	{ "keys": ["ctrl+shift+'"], "command": "toggle_tabs" },
+
+	{
+		// open current folder (highlights current file)
+		"keys": ["alt+e"],
+		"command": "open_dir",
+		"args": {
+			"dir": "$file_path",
+			"file": "$file_name"
+		}
+	},
+	{
+		// open top folder
+		"keys": ["ctrl+shift+e"],
+		"command": "open_dir",
+		"args": {
+			"dir": "$folder"
+		}
+	}
 ]

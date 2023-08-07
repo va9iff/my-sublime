@@ -1,7 +1,0 @@
-// Open file explorer at the top folder
-
-{
-	"working_dir": "$folder",
-	"shell_cmd": "start .",	
-	"selector": "-",
-}

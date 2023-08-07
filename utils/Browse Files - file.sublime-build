@@ -1,7 +1,0 @@
-// Open file explorer at the folder of the file 
-
-{
-	"working_dir": "$file_path",
-	"shell_cmd": "start .",
-	"selector": "-",
-}
