@@ -10,10 +10,17 @@
 		}
 	},
 
-	// terminus in view
+	// terminus in view (cwd top folder)
+	{
+	    "keys": ["alt+shift+t"], "command": "terminus_open", "args": {
+	        "cwd": "${file_path:${folder}}"
+	    }
+	},
+
+	// terminus in view (cwd file's folder)
 	{
 	    "keys": ["alt+t"], "command": "terminus_open", "args": {
-	        "cwd": "${file_path:${folder}}"
+	        "cwd": "${folder}"
 	    }
 	},
 
