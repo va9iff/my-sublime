@@ -1,0 +1,20 @@
+[
+	{
+		"keys": ["tab"],
+		"command": "auto_tag_close",
+		"context": [
+			// {
+				// "key": "selector",
+				// "operator": "equal",
+				// "operand": "text.html",
+				// "match_all": true
+			// },
+			// {
+				// "key": "selection_empty",
+				// "operator": "equal",
+				// "operand": true,
+				// "match_all": true
+			// }
+		]
+	},
+]
