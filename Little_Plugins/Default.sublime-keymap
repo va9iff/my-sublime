@@ -3,18 +3,27 @@
 		"keys": ["tab"],
 		"command": "auto_tag_close",
 		"context": [
-			// {
-				// "key": "selector",
-				// "operator": "equal",
-				// "operand": "text.html",
-				// "match_all": true
-			// },
-			// {
-				// "key": "selection_empty",
-				// "operator": "equal",
-				// "operand": true,
-				// "match_all": true
-			// }
+			{
+				"key": "selector",
+				"operator": "equal",
+				"operand": "source.js meta.string.js string.quoted.other.js",
+				"match_all": true
+			},
+			{
+				"key": "selection_empty",
+				"operator": "equal",
+				"operand": true,
+				"match_all": true
+			},
+			{ 
+				"key": "preceding_text", 
+				"operator": "not_regex_contains", 
+				// "operator": "regex_contains", 
+				"operand": "^\\s*$", 
+				// "operand": "<\\w]", 
+				"match_all": true 
+			}
+
 		]
 	},
 ]
